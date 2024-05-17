@@ -1,0 +1,52 @@
+.services {
+    padding: 0 0 95px 0;
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+
+        &:hover{
+            .services__link{
+                transform: translateY(120%);
+            }
+        }
+    }
+
+    &__item{
+        &:not(:last-child){
+           margin-right: 30px;
+        }
+    }
+
+    &__link{
+        text-align: center;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 0.03em;
+        position: absolute;
+        bottom: 96px;
+        max-width: 370px;
+        width: 100%;
+        padding: 25px 0;
+        background: rgba(47, 48, 58, 0.6);
+        transform: translateY(300%);
+        transition:transform 0.5s, color 0.5s, outline-color 0.5s, opacity 0.5s;
+        
+ 
+     
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            opacity: .50;
+        }
+
+        &:active {
+            color: rgb(236 60 5 / 70%);
+        }
+    }
+}

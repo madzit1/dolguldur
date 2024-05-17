@@ -1,0 +1,39 @@
+.footer {
+    padding: 65px 0;
+    background-color: #070303;
+
+    &__logo {
+        display: block;
+        margin-bottom: 23px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        color: #fff;
+    }
+
+    &__link {
+        line-height: 1.7;
+        color: #f29040;
+        outline: 1px solid transparent;
+        border-radius: 4px;
+        transition: color 0.5s, outline-color 0.5s;
+
+        &:hover {
+            color: #ec3c05;
+        }
+
+        &:focus {
+            outline-color: $accent;
+        }
+
+        &:active {
+            color: rgba(242, 144, 64, 0.6);
+        }
+    }
+}

@@ -10,7 +10,7 @@ const avif = require('gulp-avif');
 const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
-const svgSprite = require('gulp-svg-sprite');
+const fileInclude   = require('gulp-file-include');
 
 function images() {
     return src(['app/images/src/*.*', '!app/images/src/*.svg'])
@@ -24,21 +24,6 @@ function images() {
         .pipe(imagemin())
         .pipe(dest('app/images/dist'))
 }
-
-function sprite() {
-    return src('app/images/dist/*.svg')
-        .pipe(svgSprite({
-          mode:{
-            stack: {
-                sprite: '../sprite.svg',
-                example: true
-            } 
-          }
-        }))
-        .pipe(dest('app/images/dist'))
-}
-
-
 
 function scripts() {
     return src([
@@ -66,17 +51,17 @@ function watching() {
             baseDir: "app/"
         }
     });
-    watch(['app/scss/style.scss'], styles);
+    watch(['app/scss/**/*.scss'], styles);
     watch(['app/images/src'], images);
     watch(['app/js/main.js'], scripts);
     watch(['app/*.html']).on('change', browserSync.reload);
+    watch(['app/html/**/*.html'], htmlInclude);
 }
 
 function cleanDist() {
     return src('dist')
         .pipe(clean())
 }
-
 
 function building() {
     return src([
@@ -88,13 +73,21 @@ function building() {
         .pipe(dest('dist'))
 }
 
+const htmlInclude = () => {
+    return src(['app/html/page/*.html'])													
+    .pipe(fileInclude({
+      prefix: '@@',
+      basepath: '@file',
+    }))
+    .pipe(dest('app'))
+    .pipe(browserSync.stream());
+  }
 
-
+exports.htmlInclude = htmlInclude;
 exports.styles = styles;
 exports.images = images;
-exports.sprite = sprite;
 exports.scripts = scripts;
 exports.watching = watching;
 
 exports.build = series(cleanDist, building);
-exports.default = parallel(styles, images, scripts, watching);
+exports.default = parallel(htmlInclude, styles, images, scripts, watching);
