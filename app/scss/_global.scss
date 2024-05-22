@@ -33,7 +33,6 @@ body {
 }
 
 .logo {
-    margin-right: 90px;
     border-radius: 4px;
     outline: 1px solid transparent;
     transition: opacity 0.5s, outline-color 0.5s;
@@ -57,7 +56,6 @@ body {
     font-size: 16px;
     font-weight: 700;
     padding: 10px 50px;
-    margin: 4px;
     border-radius: 4px;
 
     &:hover {
@@ -76,6 +74,7 @@ body {
 .title {
     text-align: center;
     font-size: 36px;
+    font-weight: 400;
     color: #212121;
     letter-spacing: 0.03em;
     margin-bottom: 50px;

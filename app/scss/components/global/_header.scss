@@ -5,6 +5,41 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__logo {
+        margin-right: 90px;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: end;
+        gap: 45px;
+    }
+
+    &__contacts-link {
+        display: flex;
+        align-items: center;
+        outline: 1px solid transparent;
+        border-radius: 4px;
+        transition: color 0.5s, outline-color 0.5s;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            outline-color: $accent ;
+        }
+
+        &:active {
+            color: rgb(236 60 5 / 70%);
+        }
+    }
+
+    &__contacts-icon {
+        margin-right: 10px;
+        stroke: currentColor;
+    }
 }
 
 .menu {
@@ -13,12 +48,7 @@
     &__list {
         display: flex;
         align-items: end;
-    }
-
-    &__item {
-        &:not(:last-child) {
-            margin-right: 50px;
-        }
+        gap: 50px;
     }
 
     &__link {
@@ -41,45 +71,5 @@
             color: rgb(236 60 5 / 70%);
             border-bottom: 4px solid rgb(236 60 5 / 70%);
         }
-    }
-}
-
-.info-nav {
-    display: flex;
-    align-items: end;
-
-    &__list {
-        display: flex;
-    }
-
-    &__item {
-        &:not(:last-child) {
-            margin-right: 45px;
-        }
-    }
-
-    &__link {
-        display: flex;
-        align-items: center;
-        outline: 1px solid transparent;
-        border-radius: 4px;
-        transition: color 0.5s, outline-color 0.5s;
-
-        &:hover {
-            color: $accent;
-        }
-
-        &:focus {
-            outline-color: $accent ;
-        }
-
-        &:active {
-            color: rgb(236 60 5 / 70%);
-        }
-    }
-
-    &__icon{
-        margin-right: 10px;
-        stroke: currentColor;
     }
 }

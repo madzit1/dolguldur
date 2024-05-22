@@ -7,14 +7,19 @@
         margin-bottom: 23px;
     }
 
+    &__text {
+        display: block;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+}
+
+.address {
+    font-style: normal;
     &__item {
         &:not(:last-child) {
             margin-bottom: 10px;
         }
-    }
-
-    &__text {
-        color: #fff;
     }
 
     &__link {
