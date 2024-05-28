@@ -1,0 +1,74 @@
+.works {
+    padding: 105px 0 95px;
+
+    &__btn-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 1.0;
+        color: #212121;
+        padding: 11px 26px;
+        background-color: #f5f4fa;
+        border-radius: 4px;
+        height: 38px;
+        outline: 1px solid transparent;
+        outline-offset: 4px;
+        transition: background-color 0.5s,  outline-color 0.5s, color 0.5s, box-shadow 0.5s;
+
+        &:hover {
+            box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        &:focus {
+            outline-color: $accent ;
+        }
+
+        &:active {
+            box-shadow: inset 3px 3px 8px 0 rgba(0, 0, 0, 0.4);
+            background-color: #ec3c05;
+            color: #fff;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    &__item {
+        max-width: 370px;
+        width: 100%;
+    }
+
+    &__content {
+        padding: 20px 24px;
+        border: 1px solid #757575;
+        border-top: none;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 2.0;
+        font-weight: 400;
+        color: #212121;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        font-size: 16px;
+    }
+}
+
+.mixitup-control-active {
+    background-color: $accent;
+    color: #fff;
+    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.1);
+}

@@ -1,5 +1,6 @@
 .header {
     padding: 22px 0;
+    border-bottom: 1px solid #ECECEC;
 
     &__inner {
         display: flex;
@@ -38,6 +39,7 @@
 
     &__contacts-icon {
         margin-right: 10px;
+        fill: currentColor;
         stroke: currentColor;
     }
 }

@@ -23,5 +23,8 @@
     "gulp-webp": "^4.0.1",
     "jquery": "^3.7.1",
     "sass": "^1.69.3"
+  },
+  "dependencies": {
+    "mixitup": "^3.3.1"
   }
 }
