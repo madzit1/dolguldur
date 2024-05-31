@@ -1,7 +1,7 @@
 .works {
     padding: 105px 0 95px;
 
-    &__btn-list {
+    &__filter {
         display: flex;
         justify-content: center;
         gap: 10px;
@@ -9,25 +9,21 @@
     }
 
     &__button {
-        display: flex;
-        align-items: center;
         font-size: 16px;
         line-height: 1.0;
         color: #212121;
         padding: 11px 26px;
         background-color: #f5f4fa;
         border-radius: 4px;
-        height: 38px;
-        outline: 1px solid transparent;
-        outline-offset: 4px;
-        transition: background-color 0.5s,  outline-color 0.5s, color 0.5s, box-shadow 0.5s;
+        transition: background-color 0.5s, outline 0.5s, color 0.5s, box-shadow 0.5s;
 
         &:hover {
             box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.4);
         }
 
         &:focus {
-            outline-color: $accent ;
+            outline: 1px solid $accent;
+            outline-offset: 4px;
         }
 
         &:active {
@@ -35,11 +31,17 @@
             background-color: #ec3c05;
             color: #fff;
         }
+
+        &.mixitup-control-active {
+            background-color: $accent;
+            color: #fff;
+            box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.1);
+        }
     }
 
     &__list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
         gap: 30px;
     }
 
@@ -65,10 +67,4 @@
     &__text {
         font-size: 16px;
     }
-}
-
-.mixitup-control-active {
-    background-color: $accent;
-    color: #fff;
-    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.1);
 }

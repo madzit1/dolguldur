@@ -1,5 +1,5 @@
 .hero {
-    background-color: #000;
+    position: relative;
 
     &__container {
         display: flex;
@@ -11,6 +11,8 @@
         width: 100%;
         text-align: center;
         padding: 200px 0;
+        position: absolute;
+        z-index: 10;
     }
 
     &__title {
@@ -20,5 +22,25 @@
         text-transform: uppercase;
         color: #fff;
         margin-bottom: 30px;
+    }
+
+    &__slider-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 260px 0;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            background-color: #565e6a9e;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
     }
 }

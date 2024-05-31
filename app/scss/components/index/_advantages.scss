@@ -1,17 +1,26 @@
 .advantages {
     padding: 95px 0 97px;
 
-    &__item{
-        max-width: 270px;
-        width: 100%;
-    }
-
+    
     &__list {
         display: flex;
         justify-content: space-between;
         gap: 30px;
     }
 
+    &__item{
+        max-width: 270px;
+        width: 100%;
+    }
+
+    &__img{
+        display: block;
+        margin-bottom: 30px;
+        border: 1px solid #757575;
+        border-radius: 4px;
+        padding: 25px 100px;
+    }
+    
     &__title{
         font-weight: 700;
         text-transform: uppercase;

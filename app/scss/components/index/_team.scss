@@ -17,8 +17,12 @@
         box-shadow: 2px 3px 3px 0 rgba(0, 0, 0, 0.3);
     }
 
-    &__img{
+    &__img {
         object-fit: cover;
+    }
+
+    &__box {
+        padding: 30px 20px 30px 20px;
     }
 
     &__title {
@@ -26,7 +30,14 @@
         color: #212121;
     }
 
-    &__box{
-        padding: 30px 20px 30px 20px;
+    &__text {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        gap: 22px;
     }
 }
