@@ -1,0 +1,33 @@
+.social {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__team{
+        justify-content: center;
+        gap: 22px;
+    }
+
+    &__footer{
+        gap: 10px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        color: #757575;
+    }
+
+    &__link-footer{
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &__icon{
+        fill: currentColor;
+    }
+}

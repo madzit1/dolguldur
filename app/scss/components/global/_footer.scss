@@ -2,9 +2,14 @@
     padding: 65px 0;
     background-color: #070303;
 
+    &__inner{
+        display: flex;
+    }
+
     &__box{
         max-width: 240px;
         width: 100%;
+        margin-right: 63px;
     }
 
     &__logo {
@@ -16,6 +21,18 @@
         display: block;
         color: #fff;
         margin-bottom: 10px;
+    }
+
+    &__social{
+        max-width: 206px;
+        width: 100%;
+    }
+
+    &__title{
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 20px;
     }
 }
 

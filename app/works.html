@@ -54,9 +54,10 @@
 </header>
 
 <main class="main">
+    <h1 class="sr-only">Our Works our team's work</h1>
     <section class="works">
-        <h1 class="sr-only">Our Works</h1>
         <div class="container">
+            <h2 class="sr-only">Our Works</h2>
             <ul class="works__filter">
                 <li class="works__filter-item">
                     <button class="works__button" type="button" data-filter="all">All</button>
@@ -75,7 +76,6 @@
                 </li>
             </ul>
             <ul class="works__list">
-                <h1 class="sr-only">Works list</h1>
                 <li class="works__item mix category-a">
                     <img class="works__img" src="/images/works/works.jpg" alt="Web-site" width="370" height="294">
                     <div class="works__content">
@@ -182,21 +182,61 @@
 </main>
 <footer class="footer">
     <div class="container">
-        <div class="footer__box">
-            <a class="logo footer__logo" href="#">
-                <img class="logo__img" src="../images/icon/footer-logo.svg" alt="logo Dolguldur" width="140" height="25">
-            </a>
-            <span class="footer__text">14 Green St., Belmont, Boston. USA</span>
-            <address class="address">
-                <ul class="address__list">
-                    <li class="address__item">
-                        <a class="address__link" href="mailto:info@dolguldurcom">info@dolguldur.com</a>
+        <div class="footer__inner">
+            <div class="footer__box">
+                <a class="logo footer__logo" href="#">
+                    <img class="logo__img" src="../images/icon/footer-logo.svg" alt="logo Dolguldur" width="140"
+                        height="25">
+                </a>
+                <span class="footer__text">14 Green St., Belmont, Boston. USA</span>
+                <address class="address">
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <a class="address__link" href="mailto:info@dolguldurcom">info@dolguldur.com</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link" href="tel:380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer__social">
+                <span class="footer__title">join</span>
+                <ul class="social social__footer">
+                    <li class="social__item">
+                        <a class="social__link social__link-footer" href="#">
+                            <svg class="social__icon social__icon-footer" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            <span class="sr-only">instagram</span>
+                        </a>
                     </li>
-                    <li class="address__item">
-                        <a class="address__link" href="tel:380961111111">+38 096 111 11 11</a>
+                    <li class="social__item">
+                        <a class="social__link social__link-footer" href="#">
+                            <svg class="social__icon social__icon-footer" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-twitter"></use>
+                            </svg>
+                            <span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link-footer" href="#">
+                            <svg class="social__icon social__icon-footer" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            <span class="sr-only">facebook</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link-footer" href="#">
+                            <svg class="social__icon social__icon-footer" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            <span class="sr-only">linkedin</span>
+                        </a>
                     </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </div>
 </footer>

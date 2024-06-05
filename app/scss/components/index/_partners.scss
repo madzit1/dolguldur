@@ -1,0 +1,23 @@
+.partners {
+    padding: 95px 0;
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #757575;
+        border-radius: 4px;
+        width: 170px;
+        height: 92px;
+        color: #757575;
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
