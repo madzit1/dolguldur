@@ -1,15 +1,8 @@
 .social {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-
-    &__team{
-        justify-content: center;
-        gap: 22px;
-    }
-
-    &__footer{
-        gap: 10px;
-    }
+    gap: 10px;
 
     &__link {
         display: flex;
@@ -20,14 +13,14 @@
         border: 1px solid transparent;
         border-radius: 50%;
         color: #757575;
+
+        &--footer {
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
     }
 
-    &__link-footer{
-        color: #fff;
-        background-color: rgba(255, 255, 255, 0.1);
-    }
-
-    &__icon{
+    &__icon {
         fill: currentColor;
     }
 }
