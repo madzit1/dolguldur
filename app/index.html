@@ -21,7 +21,7 @@
                 </a>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="index.html">Home</a>
+                        <a class="menu__link menu__link--active" href="index.html">Home</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="works.html">Our Works</a>
@@ -58,16 +58,21 @@
     <div class="container hero__container">
         <div class="hero__content">
             <h2 class="hero__title">author's forge where your sites are created</h2>
-            <button class="button" type="button">Go to order</button>
+            <button class="button" type="button" data-modal-open>Go to order</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal-window">
+                <button class="modal__close-button" data-modal-close>
+                    <span class="sr-only">close button</span>
+                </button>
+            </div>
         </div>
     </div>
-
     <div class="hero__slider">
         <div class="hero__slider-img" style="background-image: url('images/hero/hero-bg.jpg')"></div>
         <!-- <div class="hero__slider-img" style="background-image: url('images/hero/hero-bg-2.jpg')"></div>
-            <div class="hero__slider-img" style="background-image: url('images/hero/hero-bg-3.jpg')"></div> -->
+        <div class="hero__slider-img" style="background-image: url('images/hero/hero-bg-3.jpg')"></div> -->
     </div>
-
 </section>
     <section class="advantages">
     <div class="container">
@@ -427,7 +432,7 @@
                 <span class="footer__title">join</span>
                 <ul class="social">
                     <li class="social__item">
-                        <a class="social__link social__link--footer" href="#">
+                        <a class="social__link social__link--interactive" href="#">
                             <svg class="social__icon" width="20" height="20">
                                 <use href="images/icon/sprite.svg#icon-instagram"></use>
                             </svg>
@@ -435,7 +440,7 @@
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--footer" href="#">
+                        <a class="social__link social__link--interactive" href="#">
                             <svg class="social__icon" width="20" height="20">
                                 <use href="images/icon/sprite.svg#icon-twitter"></use>
                             </svg>
@@ -443,7 +448,7 @@
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--footer" href="#">
+                        <a class="social__link social__link--interactive" href="#">
                             <svg class="social__icon" width="20" height="20">
                                 <use href="images/icon/sprite.svg#icon-facebook"></use>
                             </svg>
@@ -451,7 +456,7 @@
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--footer" href="#">
+                        <a class="social__link social__link--interactive" href="#">
                             <svg class="social__icon" width="20" height="20">
                                 <use href="images/icon/sprite.svg#icon-linkedin"></use>
                             </svg>
@@ -464,5 +469,6 @@
     </div>
 </footer>
 <script src="js/main.min.js"></script> 
+<script src="js/modal.js"></script> 
 </body>
 </html>

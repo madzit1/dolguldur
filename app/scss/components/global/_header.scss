@@ -56,22 +56,36 @@
     &__link {
         font-size: 16px;
         color: #212121;
-        border-radius: 4px;
-        padding: 24px 4px;
+        padding: 20px 0;
         outline: 1px solid transparent;
+        outline-offset: 4px;
+        border-radius: 4px;
         transition: color 0.5s, outline-color 0.5s, border-bottom 0.5s;
+        position: relative;
 
         &:hover {
             color: $accent;
         }
 
         &:focus {
-            outline-color: $accent ;
+            outline-color: $accent;
         }
 
-        &:active {
-            color: rgb(236 60 5 / 70%);
-            border-bottom: 4px solid rgb(236 60 5 / 70%);
+        &--active {
+            color: $accent;
+
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                border-bottom: 4px solid $accent;
+                border-radius: 2px;
+                width: 45px;
+                bottom: -7px;
+                
+
+            }
         }
     }
 }
