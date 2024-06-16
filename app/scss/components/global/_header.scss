@@ -20,7 +20,6 @@
     &__contacts-link {
         display: flex;
         align-items: center;
-        outline: 1px solid transparent;
         border-radius: 4px;
         transition: color 0.5s, outline-color 0.5s;
 
@@ -29,11 +28,12 @@
         }
 
         &:focus {
-            outline-color: $accent ;
+            outline: 1px solid $accent;
+            outline-offset: 4px;
         }
 
         &:active {
-            color: rgb(236 60 5 / 70%);
+            opacity: .70;
         }
     }
 
@@ -57,23 +57,43 @@
         font-size: 16px;
         color: #212121;
         padding: 20px 0;
-        outline: 1px solid transparent;
-        outline-offset: 4px;
         border-radius: 4px;
-        transition: color 0.5s, outline-color 0.5s, border-bottom 0.5s;
+        transition: color 0.5s, outline-color 0.5s, ;
         position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            border-bottom: 4px solid transparent;
+            border-radius: 2px;
+            width: 45px;
+            bottom: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: border-bottom 0.5s;
+        }
 
         &:hover {
             color: $accent;
+
+            &::before {
+                border-bottom: 4px solid $accent;
+            }
         }
 
         &:focus {
-            outline-color: $accent;
+            outline: 1px solid $accent;
+            outline-offset: 4px;
+        }
+
+        &:active {
+            opacity: .50;
         }
 
         &--active {
             color: $accent;
-
+            transition: color 0.5s;
 
             &::before {
                 content: '';
@@ -83,8 +103,10 @@
                 border-radius: 2px;
                 width: 45px;
                 bottom: -7px;
-                
+            }
 
+            &:active {
+                opacity: .70;
             }
         }
     }

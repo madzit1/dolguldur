@@ -38,7 +38,9 @@
 
 .address {
     font-style: normal;
+    
     &__item {
+
         &:not(:last-child) {
             margin-bottom: 10px;
         }
@@ -47,7 +49,6 @@
     &__link {
         line-height: 1.7;
         color: #f29040;
-        outline: 1px solid transparent;
         border-radius: 4px;
         transition: color 0.5s, outline-color 0.5s;
 
@@ -56,11 +57,12 @@
         }
 
         &:focus {
-            outline-color: $accent;
+            outline: 1px solid $accent;
+            outline-offset: 4px;
         }
 
         &:active {
-            color: rgba(242, 144, 64, 0.6);
+          opacity: .60;
         }
     }
 }

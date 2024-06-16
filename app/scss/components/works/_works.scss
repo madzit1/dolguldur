@@ -51,13 +51,16 @@
     }
 
      &__card{
-         position: relative;
-         overflow: hidden;
          &:hover{
              .works__hidden-text{
                  transform: translateY(0%);
              }
          }
+     }
+
+     &__top{
+        position: relative;
+        overflow: hidden;
      }
 
     &__content {
@@ -87,8 +90,9 @@
         padding: 63px 24px;
         background-color: rgba(236, 59, 5, .8);
         position: absolute;
-        top: -5px;
-        transform: translateY(300%);
+        top: 0px;
+        left: 0;
+        transform: translateY(105%);
         transition:   transform 0.8s ;
     }
 }

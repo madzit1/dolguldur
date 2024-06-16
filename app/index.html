@@ -12,11 +12,13 @@
 </head>
 
 <body>
+
+
 <header class="header">
     <div class="container">
         <div class="header__inner">
             <nav class="menu">
-                <a class="logo header__logo" href="#">
+                <a class="logo header__logo" href="index.html">
                     <img class="logo__img" src="../images/icon/logo.svg" alt="logo Dolguldur" width="190" height="36">
                 </a>
                 <ul class="menu__list">
@@ -24,7 +26,7 @@
                         <a class="menu__link menu__link--active" href="index.html">Home</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="works.html">Our Works</a>
+                        <a class="menu__link @@activeclassWorks" href="works.html">Our Works</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="#">Contacts</a>
@@ -52,7 +54,7 @@
         </div>
     </div>
 </header>
-<main class="main">
+<main class="main"> 
     <h1 class="sr-only">web development and their developers</h1>
     <section class="hero">
     <div class="container hero__container">
@@ -61,17 +63,17 @@
             <button class="button" type="button" data-modal-open>Go to order</button>
         </div>
         <div class="backdrop is-hidden" data-modal>
-            <div class="modal-window">
-                <button class="modal__close-button" data-modal-close>
-                    <span class="sr-only">close button</span>
+            <div class="modal">
+                <button class="close-button" type="button" data-modal-close>
+                    <span class="sr-only">fashion window close button</span>
                 </button>
             </div>
         </div>
     </div>
     <div class="hero__slider">
         <div class="hero__slider-img" style="background-image: url('images/hero/hero-bg.jpg')"></div>
-        <!-- <div class="hero__slider-img" style="background-image: url('images/hero/hero-bg-2.jpg')"></div>
-        <div class="hero__slider-img" style="background-image: url('images/hero/hero-bg-3.jpg')"></div> -->
+        <div class="hero__slider-img" style="background-image: url('images/hero/hero-bg-2.jpg')"></div>
+        <div class="hero__slider-img" style="background-image: url('images/hero/hero-bg-3.jpg')"></div>
     </div>
 </section>
     <section class="advantages">
@@ -432,7 +434,7 @@
                 <span class="footer__title">join</span>
                 <ul class="social">
                     <li class="social__item">
-                        <a class="social__link social__link--interactive" href="#">
+                        <a class="social__link social__link--light" href="#">
                             <svg class="social__icon" width="20" height="20">
                                 <use href="images/icon/sprite.svg#icon-instagram"></use>
                             </svg>
@@ -440,7 +442,7 @@
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--interactive" href="#">
+                        <a class="social__link social__link--light" href="#">
                             <svg class="social__icon" width="20" height="20">
                                 <use href="images/icon/sprite.svg#icon-twitter"></use>
                             </svg>
@@ -448,7 +450,7 @@
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--interactive" href="#">
+                        <a class="social__link social__link--light" href="#">
                             <svg class="social__icon" width="20" height="20">
                                 <use href="images/icon/sprite.svg#icon-facebook"></use>
                             </svg>
@@ -456,7 +458,7 @@
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--interactive" href="#">
+                        <a class="social__link social__link--light" href="#">
                             <svg class="social__icon" width="20" height="20">
                                 <use href="images/icon/sprite.svg#icon-linkedin"></use>
                             </svg>

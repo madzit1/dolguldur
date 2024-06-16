@@ -10,10 +10,8 @@
         align-items: center;
         width: 44px;
         height: 44px;
-        border: 1px solid transparent;
         border-radius: 50%;
         color: #757575;
-        outline: 1px solid transparent;
         transition: color 0.5s,   background-color 0.5s, outline-color 0.5s,  box-shadow 0.5s;
 
         &:hover{
@@ -22,17 +20,19 @@
         }
 
         &:focus{
-            outline-color: $accent;
+            outline: 1px solid  $accent;
+            outline-offset: 4px;
         }
 
         &:active{
+            background-color: $accent;
+            color: #fff;
             box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
         }
 
-        &--interactive {
+        &--light {
             color: #fff;
             background-color: rgba(255, 255, 255, 0.1);
-            outline-offset: 4px;
         }
     }
 

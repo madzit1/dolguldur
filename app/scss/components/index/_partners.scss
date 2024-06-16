@@ -15,8 +15,6 @@
         width: 170px;
         height: 92px;
         color: #757575;
-        outline: 1px solid transparent;
-        outline-offset: 4px;
         transition: color 0.5s, border-color 0.5s, outline-color 0.5s;
 
         &:hover {
@@ -25,7 +23,8 @@
         }
 
         &:focus {
-            outline-color: $accent;
+            outline: 1px solid $accent;
+            outline-offset: 4px;
         }
 
         &:active {
