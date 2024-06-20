@@ -2,11 +2,11 @@
     padding: 65px 0;
     background-color: #070303;
 
-    &__inner{
+    &__inner {
         display: flex;
     }
 
-    &__content{
+    &__content {
         max-width: 240px;
         width: 100%;
         margin-right: 63px;
@@ -23,22 +23,80 @@
         margin-bottom: 10px;
     }
 
-    &__box{
+    &__box {
         max-width: 206px;
         width: 100%;
+        margin-right: 93px;
     }
 
-    &__title{
+    &__title {
         display: block;
         color: #fff;
         text-transform: uppercase;
         margin-bottom: 20px;
     }
+
+    &__form {
+        max-width: 570px;
+        width: 100%;
+    }
+
+    &__form-box {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    &__form-top {
+        flex-grow: 1;
+        margin-right: 12px;
+    }
+
+    &__form-input {
+        max-width: 358px;
+        width: 100%;
+        padding: 11px 16px;
+        background-color: #070303;
+        color: rgba(255, 255, 255, 0.3);
+        border: none;
+        outline: 1px solid rgba(255, 255, 255, 0.3);
+        transition: color 0.5s, outline-color 0.5s;
+
+        &:hover {
+            color: rgba(236, 59, 5, 0.7);
+        }
+
+        &:focus {
+            outline-color: $accent;
+        }
+
+        &::placeholder {
+            color: currentColor;
+        }
+    }
+
+    &__form-buttom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 28px 10px 38px;
+        transition: background-color 0.5s, color 0.5s;
+
+        &:hover {
+            background-color: #fff;
+            color: $accent;
+        }
+    }
+
+    &__form-icon {
+        fill: currentColor;
+        margin-left: 20px;
+    }
 }
 
 .address {
     font-style: normal;
-    
+
     &__item {
 
         &:not(:last-child) {
@@ -62,7 +120,7 @@
         }
 
         &:active {
-          opacity: .60;
+            opacity: .60;
         }
     }
 }
