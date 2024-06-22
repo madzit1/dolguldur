@@ -9,6 +9,10 @@ body {
     flex-direction: column;
 }
 
+svg {
+    fill: currentColor;
+}
+
 .main {
     flex-grow: 1;
 }
@@ -71,6 +75,24 @@ body {
 
     &:active {
         box-shadow: inset 3px 3px 8px 0 rgba(0, 0, 0, 0.4)
+    }
+
+    &--big {
+        padding: 10px 68px;
+    }
+
+    &--icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 28px 10px 38px;
+        transition: background-color 0.5s, color 0.5s;
+
+        &:hover {
+            background-color: #fff;
+            color: $accent;
+        }
     }
 }
 
@@ -136,5 +158,4 @@ body {
     &::after {
         transform: rotate(-45deg);
     }
-
 }

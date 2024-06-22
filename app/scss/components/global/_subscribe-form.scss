@@ -1,0 +1,34 @@
+.subscribe-form {
+    display: flex;
+    align-items: end;
+
+    &__label {
+        width: 63%;
+        margin-right: 12px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 11px 16px;
+        background-color: #070303;
+        outline: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        color: #fff;
+        transition: color 0.5s, outline-color 0.5s;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 0.5s;
+        }
+
+        &:hover {
+            &::placeholder {
+                color: rgba(236, 59, 5, 0.7);
+            }
+        }
+
+        &:focus {
+            outline-color: $accent;
+        }
+    }
+}

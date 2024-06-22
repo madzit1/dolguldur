@@ -36,61 +36,9 @@
         margin-bottom: 20px;
     }
 
-    &__form {
+    &__form-box{
         max-width: 570px;
         width: 100%;
-    }
-
-    &__form-box {
-        display: flex;
-        justify-content: center;
-        align-items: end;
-    }
-
-    &__form-top {
-        flex-grow: 1;
-        margin-right: 12px;
-    }
-
-    &__form-input {
-        max-width: 358px;
-        width: 100%;
-        padding: 11px 16px;
-        background-color: #070303;
-        color: rgba(255, 255, 255, 0.3);
-        border: none;
-        outline: 1px solid rgba(255, 255, 255, 0.3);
-        transition: color 0.5s, outline-color 0.5s;
-
-        &:hover {
-            color: rgba(236, 59, 5, 0.7);
-        }
-
-        &:focus {
-            outline-color: $accent;
-        }
-
-        &::placeholder {
-            color: currentColor;
-        }
-    }
-
-    &__form-buttom {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 28px 10px 38px;
-        transition: background-color 0.5s, color 0.5s;
-
-        &:hover {
-            background-color: #fff;
-            color: $accent;
-        }
-    }
-
-    &__form-icon {
-        fill: currentColor;
-        margin-left: 20px;
     }
 }
 
