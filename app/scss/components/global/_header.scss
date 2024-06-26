@@ -1,6 +1,9 @@
 .header {
     padding: 12px 0;
-    // border-bottom: 1px solid #ECECEC;
+
+    @media (min-width: 340px) {
+        border-bottom: 1px solid #ECECEC;
+    }
 
     @media (min-width: 768px) {
         padding: 22px 0;
