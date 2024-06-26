@@ -1,15 +1,29 @@
 .advantages {
-    padding: 95px 0 97px;
+    padding: 60px 0;
+
+    @media (min-width: 1200px) {
+        padding: 94px 0;
+    }
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 30px;
+
+        @media (min-width: 1200px) {
+            justify-content: space-between;
+            flex-wrap: unset;
+        }
     }
 
     &__item {
-        max-width: 270px;
+        max-width: 450px;
         width: 100%;
+
+        @media (min-width: 768px) {
+            max-width: 350px;
+        }
     }
 
     &__thumbnail {
@@ -24,10 +38,15 @@
     }
 
     &__title {
+        text-align: center;
         font-weight: 700;
         text-transform: uppercase;
         color: #212121;
         margin-bottom: 10px;
+
+        @media (min-width: 768px) {
+           text-align: unset;
+        }
     }
 
     &__text {

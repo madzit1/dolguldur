@@ -1,27 +1,57 @@
 .header {
-    padding: 22px 0;
-    border-bottom: 1px solid #ECECEC;
+    padding: 12px 0;
+    // border-bottom: 1px solid #ECECEC;
+
+    @media (min-width: 768px) {
+        padding: 22px 0;
+    }
 
     &__inner {
-        display: flex;
-        justify-content: space-between;
+        @media (min-width: 340px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__logo {
         margin-right: 90px;
+        display: none;
+
+        @media (min-width: 1200px) {
+            display: block;
+        }
+    }
+
+    &__img-small {
+        object-fit: contain;
     }
 
     &__contacts {
-        display: flex;
-        align-items: end;
-        gap: 45px;
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        @media (min-width: 1200px) {
+            flex-direction: unset;
+            gap: 45px;
+        }
     }
 
     &__contacts-link {
         display: flex;
         align-items: center;
+        font-size: 12px;
         border-radius: 4px;
         transition: color 0.5s, outline-color 0.5s;
+
+        @media (min-width: 1200px) {
+            font-size: 14px;
+        }
 
         &:hover {
             color: $accent;
@@ -43,12 +73,24 @@
 }
 
 .menu {
-    display: flex;
+    @media (min-width: 768px) {
+        display: flex;
+    }
 
     &__list {
-        display: flex;
-        align-items: end;
-        gap: 50px;
+        display: none;
+
+        @media (min-width: 1200px) {
+            display: flex;
+            gap: 50px;
+        }
+
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
     }
 
     &__link {
@@ -58,6 +100,7 @@
         border-radius: 4px;
         transition: color 0.5s, outline-color 0.5s, ;
         position: relative;
+
 
         &::before {
             content: '';

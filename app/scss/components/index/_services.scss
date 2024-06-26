@@ -1,28 +1,33 @@
 .services {
     padding: 0 0 95px 0;
-    
+    display: none;
+
+    @media (min-width: 1200px) {
+        display: block;
+    }
+
     &__list {
         display: flex;
         position: relative;
         gap: 30px;
     }
 
-    &__item{
+    &__item {
         max-width: 370px;
         width: 100%;
     }
 
-    &__title{
+    &__title {
         text-align: center;
         font-size: 16px;
         font-weight: 400;
         text-transform: uppercase;
-        color: #fff; 
+        color: #fff;
         position: absolute;
         bottom: 0px;
         max-width: 370px;
         width: 100%;
         padding: 25px 0;
         background: rgba(47, 48, 58, 0.6);
-        }
     }
+}

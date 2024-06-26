@@ -4,12 +4,35 @@
 
     &__inner {
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @media (min-width: 1200px) {
+            flex-wrap: unset;
+        }
     }
 
     &__content {
-        max-width: 240px;
+        max-width: 250px;
         width: 100%;
-        margin-right: 63px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto 60px;
+        text-align: center;
+
+
+        @media (min-width: 1200px) {
+            display: unset;
+            text-align: unset;
+            margin: unset;
+            margin-right: 63px;
+        }
+
+        @media (min-width: 768px) {
+            margin-right: 63px;
+        }
     }
 
     &__logo {
@@ -26,7 +49,14 @@
     &__box {
         max-width: 206px;
         width: 100%;
-        margin-right: 93px;
+        text-align: center;
+        margin: 0 auto 60px;
+
+        @media (min-width: 1200px) {
+            text-align: unset;
+            margin: unset;
+            margin-right: 93px;
+        }
     }
 
     &__title {
@@ -36,9 +66,14 @@
         margin-bottom: 20px;
     }
 
-    &__form-box{
+    &__form-box {
         max-width: 570px;
         width: 100%;
+        text-align: center;
+
+        @media (min-width: 1200px) {
+            text-align: unset;
+        }
     }
 }
 

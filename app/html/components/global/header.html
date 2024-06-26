@@ -5,6 +5,10 @@
                 <a class="logo header__logo" href="index.html">
                     <img class="logo__img" src="../images/icon/logo.svg" alt="logo Dolguldur" width="190" height="36">
                 </a>
+                <a class="logo logo--small" href="index.html">
+                    <img class="logo__img logo__img-small" src="../images/icon/logo-small.svg" alt="logo Dolguldur"
+                        width="116" height="36">
+                </a>
                 <ul class="menu__list">
                     <li class="menu__item">
                         <a class="menu__link @@activeclassHome" href="index.html">Home</a>
@@ -16,25 +20,77 @@
                         <a class="menu__link" href="#">Contacts</a>
                     </li>
                 </ul>
+                <div class="mobile-menu is-open" data-menu>
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link @@activeclassMobileHome" href="index.html">Home</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link @@activeclassMobileWorks" href="works.html">Our Works</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu__box">
+                        <ul class="mobile-menu__contacts">
+                            <li class="mobile-menu__contacts-item">
+                                <a class="mobile-menu__contacts-link @@activeclassContacts" href="tel:380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="mobile-menu__contacts-item">
+                                <a class="mobile-menu__contacts-link" href="mailto:info@dolguldurcom">
+                                    info@dolguldur.com 
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu__partners">
+                            <li class="mobile-menu__partners-item">
+                                <a class="mobile-menu__partners-link" href="#">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="mobile-menu__partners-item">
+                                <a class="mobile-menu__partners-link" href="#">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="mobile-menu__partners-item">
+                                <a class="mobile-menu__partners-link" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="mobile-menu__partners-item">
+                                <a class="mobile-menu__partners-link" href="#">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-                <ul class="header__contacts">
-                    <li class="header__contacts-item">
-                        <a class="header__contacts-link" href="mailto:info@dolguldurcom">
-                            <svg class="header__contacts-icon" width="16" height="12">
-                                <use href="images/icon/sprite.svg#icon-envelope"></use>
-                            </svg>
-                            info@dolguldur.com
-                        </a>
-                    </li>
-                    <li class="header__contacts-item">
-                        <a class="header__contacts-link" href="tel:380961111111">
-                            <svg class="header__contacts-icon" width="16" height="12">
-                                <use href="images/icon/sprite.svg#icon-smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
+            <ul class="header__contacts">
+                <li class="header__contacts-item">
+                    <a class="header__contacts-link" href="mailto:info@dolguldurcom">
+                        <svg class="header__contacts-icon" width="16" height="12">
+                            <use href="images/icon/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@dolguldur.com
+                    </a>
+                </li>
+                <li class="header__contacts-item">
+                    <a class="header__contacts-link" href="tel:380961111111">
+                        <svg class="header__contacts-icon" width="16" height="12">
+                            <use href="images/icon/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+            <button class="burger-btn" type="button" data-menu-button>
+                <span class="burger-btn__line"></span>
+            </button>
         </div>
     </div>
 </header>

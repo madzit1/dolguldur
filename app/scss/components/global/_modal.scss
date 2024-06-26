@@ -41,6 +41,7 @@
     &__title {
         font-size: 20px;
         margin-bottom: 11px;
+        color: #212121;
     }
 
     &__label {
@@ -51,7 +52,11 @@
         margin-bottom: 10px;
 
         &--area {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 15px;
+            }
         }
     }
 
@@ -63,6 +68,8 @@
         padding: 11px 12px 11px 40px;
         border-radius: 4px;
         transition: outline-color 0.5s;
+        position: relative;
+        z-index: -2;
 
         &:hover {
             &+.feedback-form__icon {
@@ -100,6 +107,7 @@
         top: 39px;
         left: 12px;
         fill: #212121;
+        z-index: -1;
         transition: fill 0.5s;
     }
 
@@ -107,7 +115,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+        flex-direction: column-reverse;
+        white-space: nowrap;
+        margin-bottom: 25px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 340px) {
+            flex-direction: unset;
+        }
     }
 
     &__checkbox-input {
@@ -120,17 +138,31 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-shrink: 0;
         width: 16px;
         height: 16px;
         border: 1px solid #000;
         border-radius: 2px;
         margin-right: 7px;
         transition: background-color 0.3s, border-color 0.3s;
+
+        @media (min-width: 340px) {
+            margin-right: 7px;
+        }
     }
 
     &__checkbox-input:checked+.feedback-form__fake-checkbox {
         background-color: $accent;
         border-color: $accent;
+    }
+
+    &__text {
+        font-size: 12px;
+
+        @media (min-width: 1200px) {
+            font-size: 14px;
+        }
+
     }
 
     &__link {

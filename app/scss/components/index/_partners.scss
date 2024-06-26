@@ -1,9 +1,19 @@
 .partners {
-    padding: 95px 0;
+    padding: 60px 0;
+
+    @media (min-width: 1200px) {
+        padding: 95px;
+    }
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
+
+        @media (min-width: 1200px) {
+            flex-wrap: unset;
+        }
     }
 
     &__link {
@@ -12,10 +22,18 @@
         align-items: center;
         border: 1px solid #757575;
         border-radius: 4px;
-        width: 170px;
+        width: 210px;
         height: 92px;
         color: #757575;
         transition: color 0.5s, border-color 0.5s, outline-color 0.5s;
+
+        @media (min-width: 768px) {
+            width: 226px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 170px;
+        }
 
         &:hover {
             color: $accent;

@@ -1,11 +1,19 @@
 .works {
-    padding: 105px 0 95px;
+    padding: 60px 0;
+
+    @media (min-width: 1200px) {
+        padding: 105px 0 95px;
+    }
 
     &__filter {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 50px;
+  
+        @media (min-width: 768px) {
+            justify-content: center;
+        }
     }
 
     &__button {
@@ -42,12 +50,17 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
     }
 
     &__item {
-        max-width: 370px;
+        max-width: 350px;
         width: 100%;
+
+        @media (min-width: 1200px) {
+            max-width: 370px;
+        }
     }
 
      &__card{

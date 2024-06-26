@@ -1,0 +1,114 @@
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 50px 40px 50px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #fff;
+    overflow-y: scroll;
+    transform: translateY(0);
+    transition: transform 0.5s;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    &.is-open {
+        pointer-events: none;
+        transform: translateY(-100%);
+    }
+
+    &__link {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 20px;
+        color: #212121;
+
+        &--active{
+            color: $accent;
+        }
+       
+        @media (min-width: 480px) {
+            font-size: 40px;
+            padding: 15px 0;
+        }
+    }
+
+    &__contacts {
+        margin-bottom: 20px;
+
+        &--active{
+            color: $accent;
+        }
+
+        @media (min-width: 480px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__contacts-item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 480px) {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__contacts-link {
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+
+        @media (min-width: 480px) {
+            font-size: 32px;
+        }
+    }
+
+    &__partners {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    &__partners-item {
+
+        &::before {
+            content: '';
+            width: 22px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(-90deg);
+            margin-right: 10px;
+        }
+
+        &:nth-child(1) {
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    &__partners-link {
+        width: 100%;
+        display: inline-block;
+        padding: 0 10px 0 10px;
+        font-size: 18px;
+        color: $accent;
+    }
+}
+
+.mobile-menu::-webkit-scrollbar {
+    width: 0;
+}
+
+.mobile-menu__partners::-webkit-scrollbar {
+    width: 0;
+}
