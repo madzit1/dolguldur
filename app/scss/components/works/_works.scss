@@ -14,6 +14,13 @@
         @media (min-width: 768px) {
             justify-content: center;
         }
+
+        @media (min-width: 320px) and (orientation: landscape) {
+            
+            justify-content: center;
+        }
+
+
     }
 
     &__button {
@@ -55,8 +62,16 @@
     }
 
     &__item {
-        max-width: 350px;
+        max-width: 370px;
         width: 100%;
+
+        @media (min-width: 480px){
+            max-width: 450px;
+        }
+
+        @media (min-width: 768px){
+            max-width: 350px;
+        }
 
         @media (min-width: 1200px) {
             max-width: 370px;
@@ -75,6 +90,24 @@
         position: relative;
         overflow: hidden;
      }
+
+     &__img{
+        @media (min-width: 480px){
+            width: 450px;    
+            height: 294px;
+            object-fit: cover;
+        }
+
+        @media (min-width: 768px){
+            width: 354px;    
+            height: 294px;
+        }
+
+        @media (min-width: 1200px){
+            width: 370px;    
+            height: 294px;
+        }
+    }
 
     &__content {
         padding: 20px 24px;
@@ -105,7 +138,8 @@
         position: absolute;
         top: 0px;
         left: 0;
-        transform: translateY(105%);
-        transition:   transform 0.8s ;
+        transform: translateY(110%);
+        transition:transform 0.8s;
+       
     }
 }

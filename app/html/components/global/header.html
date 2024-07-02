@@ -3,11 +3,7 @@
         <div class="header__inner">
             <nav class="menu">
                 <a class="logo header__logo" href="index.html">
-                    <img class="logo__img" src="../images/icon/logo.svg" alt="logo Dolguldur" width="190" height="36">
-                </a>
-                <a class="logo logo--small" href="index.html">
-                    <img class="logo__img logo__img-small" src="../images/icon/logo-small.svg" alt="logo Dolguldur"
-                        width="116" height="36">
+                    <img class="logo__img logo__img--header" src="../images/icon/logo.svg" alt="logo Dolguldur" width="190" height="36">
                 </a>
                 <ul class="menu__list">
                     <li class="menu__item">
@@ -20,13 +16,13 @@
                         <a class="menu__link" href="#">Contacts</a>
                     </li>
                 </ul>
-                <div class="mobile-menu is-open" data-menu>
+                <div class="mobile-menu" data-menu>
                     <ul class="mobile-menu__list">
                         <li class="mobile-menu__item">
-                            <a class="mobile-menu__link @@activeclassMobileHome" href="index.html">Home</a>
+                            <a class="mobile-menu__link @@activeclassHome" href="index.html">Home</a>
                         </li>
                         <li class="mobile-menu__item">
-                            <a class="mobile-menu__link @@activeclassMobileWorks" href="works.html">Our Works</a>
+                            <a class="mobile-menu__link @@activeclassWorks" href="works.html">Our Works</a>
                         </li>
                         <li class="mobile-menu__item">
                             <a class="mobile-menu__link" href="#">Contacts</a>
@@ -35,34 +31,34 @@
                     <div class="mobile-menu__box">
                         <ul class="mobile-menu__contacts">
                             <li class="mobile-menu__contacts-item">
-                                <a class="mobile-menu__contacts-link @@activeclassContacts" href="tel:380961111111">
+                                <a class="mobile-menu__contacts-link mobile-menu__contacts-link--active" href="tel:380961111111">
                                     +38 096 111 11 11
                                 </a>
                             </li>
                             <li class="mobile-menu__contacts-item">
                                 <a class="mobile-menu__contacts-link" href="mailto:info@dolguldurcom">
-                                    info@dolguldur.com 
+                                    info@dolguldur.com
                                 </a>
                             </li>
                         </ul>
-                        <ul class="mobile-menu__partners">
-                            <li class="mobile-menu__partners-item">
-                                <a class="mobile-menu__partners-link" href="#">
+                        <ul class="mobile-menu__social">
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social-link" href="#">
                                     Instagram
                                 </a>
                             </li>
-                            <li class="mobile-menu__partners-item">
-                                <a class="mobile-menu__partners-link" href="#">
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social-link" href="#">
                                     Twitter
                                 </a>
                             </li>
-                            <li class="mobile-menu__partners-item">
-                                <a class="mobile-menu__partners-link" href="#">
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social-link" href="#">
                                     Facebook
                                 </a>
                             </li>
-                            <li class="mobile-menu__partners-item">
-                                <a class="mobile-menu__partners-link" href="#">
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social-link" href="#">
                                     LinkedIn
                                 </a>
                             </li>
@@ -90,6 +86,7 @@
             </ul>
             <button class="burger-btn" type="button" data-menu-button>
                 <span class="burger-btn__line"></span>
+                <span class="sr-only">button to open and close mobile menu</span>
             </button>
         </div>
     </div>

@@ -3,10 +3,10 @@
     height: 35vh;
 
     @media (min-width: 375px) and (orientation: landscape) {
-        height: 65vh;
+        height: 80vh;
     }
 
-    @media (min-width: 1200px){
+    @media (min-width: 1200px) {
         height: 56vh;
     }
 
@@ -29,7 +29,7 @@
         }
 
         @media (min-width: 340px) {
-           top: 50%;
+            top: 50%;
         }
     }
 
@@ -40,7 +40,7 @@
         text-transform: uppercase;
         color: #fff;
         margin-bottom: 30px;
-        
+
         @media (min-width: 480px) {
             font-size: 24px;
         }
@@ -64,16 +64,16 @@
         z-index: -1;
         top: -50px;
 
-        
+
         @media (min-width: 375px) and (orientation: landscape) {
-            height: 65vh;
-        }
-        
-        @media (min-width: 340px) {
-            top: 0;
+            height: 80vh;
         }
 
-        @media (min-width: 1200px){
+        @media (min-width: 340px) {
+            top: -12px;
+        }
+
+        @media (min-width: 1200px) {
             height: 56vh;
         }
     }
@@ -96,12 +96,12 @@
             height: 100%;
             z-index: 1;
         }
-        
+
         @media (min-width: 375px) and (orientation: landscape) {
-            height: 65vh;
+            height: 80vh;
         }
 
-        @media (min-width: 1200px){
+        @media (min-width: 1200px) {
             height: 56vh;
         }
     }

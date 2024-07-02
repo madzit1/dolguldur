@@ -1,9 +1,9 @@
 .services {
-    padding: 0 0 95px 0;
     display: none;
 
     @media (min-width: 1200px) {
         display: block;
+        padding: 95px 0;
     }
 
     &__list {

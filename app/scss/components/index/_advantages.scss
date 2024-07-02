@@ -11,9 +11,9 @@
         flex-wrap: wrap;
         gap: 30px;
 
-        @media (min-width: 1200px) {
+        @media (min-width: 992px) {
             justify-content: space-between;
-            flex-wrap: unset;
+            flex-wrap: nowrap;
         }
     }
 
@@ -23,6 +23,10 @@
 
         @media (min-width: 768px) {
             max-width: 350px;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 270px;
         }
     }
 
@@ -45,7 +49,7 @@
         margin-bottom: 10px;
 
         @media (min-width: 768px) {
-           text-align: unset;
+            text-align: left;
         }
     }
 
