@@ -16,11 +16,8 @@
         }
 
         @media (min-width: 320px) and (orientation: landscape) {
-            
             justify-content: center;
         }
-
-
     }
 
     &__button {
@@ -57,20 +54,23 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         gap: 30px;
+
+        @media (min-width: 480px) and (orientation: landscape){
+            justify-content: center;
+        }
+
+        @media (min-width: 1200px){
+            justify-content: center;
+        }
     }
 
     &__item {
-        max-width: 370px;
+        max-width: 450px;
         width: 100%;
 
-        @media (min-width: 480px){
-            max-width: 450px;
-        }
-
         @media (min-width: 768px){
-            max-width: 350px;
+            max-width: 354px;
         }
 
         @media (min-width: 1200px) {
@@ -92,20 +92,15 @@
      }
 
      &__img{
-        @media (min-width: 480px){
-            width: 450px;    
-            height: 294px;
-            object-fit: cover;
-        }
+        width: 450px;    
+        object-fit: cover;
 
         @media (min-width: 768px){
             width: 354px;    
-            height: 294px;
         }
 
         @media (min-width: 1200px){
             width: 370px;    
-            height: 294px;
         }
     }
 

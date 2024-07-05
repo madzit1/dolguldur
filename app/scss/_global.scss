@@ -46,19 +46,12 @@ svg {
     transition: opacity 0.5s, outline-color 0.5s;
 
     &__img {
-        &--header {
-            position: absolute;
-            top: 50%;
-            left: 30%;
-            transform: translate(-50%, -50%);
-            width: 116px;
-            height: 36px;
-            object-fit: contain;
 
-            @media (min-width: 1200px) {
-                width: 190px;
-                left: 50%;
-            }
+        &--small {
+            object-fit: cover;
+            object-position: right center;
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -134,9 +127,8 @@ svg {
     width: 44px;
     height: 44px;
     position: relative;
-    z-index: 5;
-    top: -40px;
-    left: 250px;
+    top: -8px;
+    z-index: 10;
     border-radius: 4px;
     transition: transform 0.5s, outline 0.5s, box-shadow 0.5s;
 
@@ -154,7 +146,6 @@ svg {
 
     &:focus {
         outline: 1px solid $accent;
-        outline-offset: 4px;
     }
 
     &:active {
@@ -184,12 +175,6 @@ svg {
             transform: rotate(-45deg);
             top: 22px;
         }
-
-    }
-
-    @media (min-width: 340px) {
-        top: -4px;
-        left: 0;
     }
 
     &::before,
@@ -206,11 +191,11 @@ svg {
     }
 
     &::before {
-        top: 22px;
+        top: 21px;
     }
 
     &::after {
-        top: 16px;
+        top: 14px;
     }
 
     @media (min-width: 768px) {
@@ -224,14 +209,6 @@ svg {
     @media (min-width: 1024px) and (orientation: landscape) {
         display: none
     }
-
-    // @media (min-width: 320px) and (orientation: landscape) {
-    //     display: block;
-    // }
-
-    // @media (min-width: 340px), (max-width:768px) and (orientation: landscape) {
-    //     display: block;
-    // }
 }
 
 .burger-btn__line {
@@ -300,16 +277,5 @@ svg {
 
     &::after {
         transform: rotate(-45deg);
-    }
-
-    &--burger {
-        top: 10px;
-        right: 10px;
-        outline: none;
-
-        &::before,
-        &::after {
-            background-color: #757575;
-        }
     }
 }

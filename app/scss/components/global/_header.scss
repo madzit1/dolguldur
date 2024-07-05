@@ -1,12 +1,12 @@
 .header {
-    padding: 12px 0;
+    padding: 14px 0;
     position: relative;
 
     &::before {
         content: '';
         display: block;
         position: absolute;
-        bottom: 50px;
+        bottom: 1px;
         width: 100%;
         border-bottom: 1px solid #ECECEC;
 
@@ -30,9 +30,8 @@
     &__logo {
         display: block;
         margin-right: 90px;
-        position: relative;
         width: 116px;
-        height: 36px;
+        height: 26px;
         overflow: hidden;
 
         @media (min-width: 1200px) {
@@ -96,11 +95,23 @@
 }
 
 .menu {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
 
     @media (min-width: 768px) {
-        display: flex;
+        flex-grow: 0;
         align-items: center;
     }
+
+    @media (min-width: 480px) and (orientation: landscape) {
+        flex-grow: 1;
+    }
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+        flex-grow: 0;
+    }
+
 
     &__list {
         display: none;
@@ -140,31 +151,32 @@
         }
 
         @media (min-width: 768px) {
-        &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            border-bottom: 4px solid transparent;
-            border-radius: 2px;
-            width: 100%;
-            bottom: -7px;
-            left: 50%;
-            transform: translateX(-50%);
-            transition: border-bottom 0.5s;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                border-bottom: 4px solid transparent;
+                border-radius: 2px;
+                width: 100%;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: border-bottom 0.5s;
+            }
         }
-    }
 
-    @media (min-width: 320px) and (orientation: landscape) {
-        &::before {
-            display: none;
+        @media (min-width: 320px) and (orientation: landscape) {
+            &::before {
+                display: none;
+            }
         }
-    }
 
-    @media (min-width: 1024px) and (orientation: landscape) {
-        &::before {
-            display: block;
+        @media (min-width: 1024px) and (orientation: landscape) {
+            &::before {
+                display: block;
+            }
         }
-    }
+
         &:hover {
             color: $accent;
 
@@ -204,7 +216,7 @@
                     display: none;
                 }
             }
-        
+
             @media (min-width: 1024px) and (orientation: landscape) {
                 &::before {
                     display: block;
@@ -221,7 +233,6 @@
 .mobile-menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100vw;
     height: 100vh;
     padding: 50px 20px;
@@ -244,7 +255,6 @@
     @media (min-width: 320px) and (orientation: landscape) {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
     }
 
     @media (min-width: 1024px) and (orientation: landscape) {
@@ -262,9 +272,9 @@
         font-size: 20px;
         color: #212121;
         border-radius: 4px;
-        transition: opacity 0.5s, outline-color 0.5s, color 0.5s ;
+        transition: opacity 0.5s, outline-color 0.5s, color 0.5s;
 
-        &.menu__link--active{
+        &.menu__link--active {
             color: $accent;
         }
 
@@ -287,12 +297,22 @@
         }
     }
 
-    &__box {
-        max-width: 280px;
-        width: 100%;
+    &__list {
+        @media (min-width: 320px) and (orientation: landscape) {
+            margin-bottom: 50px;
+            width: 100%;
+        }
+    }
 
-        @media (min-width: 480px) {
-            max-width: 356px;
+    &__box {
+        margin-top: auto;
+
+        @media (min-width: 320px) and (orientation: landscape) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 5px;
+            margin-top: 0;
         }
     }
 
@@ -346,25 +366,111 @@
 
     &__social {
         display: flex;
+        position: relative;
     }
 
     &__social-item {
+        margin-right: 8px;
+
+        @media (min-width: 480px) {
+            margin-right: 10px;
+        }
+
+        @media (min-width: 320px) and (orientation: landscape) {
+            margin-right: 8px;
+        }
 
         &::before {
             content: '';
-            border: 1px solid rgba(33, 33, 33, 0.2);
+            display: block;
+            position: absolute;
+            top: 22px;
+            width: 22px;
+            transform: rotate(-90deg);
+            border: 1px solid rgba(33, 33, 33, .2);
+        }
+
+
+        @media (min-width: 480px) {
+            &::before {
+                top: 26px;
+            }
+        }
+
+        &--line {
+            &::before {
+                left: 69px;
+            }
+        }
+
+        &--line2 {
+            &::before {
+                left: 133px;
+            }
+        }
+
+        &--line3 {
+            &::before {
+                left: 214px;
+            }
+        }
+
+        @media (min-width: 480px) {
+            &--line {
+                &::before {
+                    left: 89px;
+                }
+            }
+
+            &--line2 {
+                &::before {
+                    left: 169px;
+                }
+            }
+
+            &--line3 {
+                &::before {
+                    left: 269px;
+                }
+            }
+
+        }
+
+        @media (min-width: 320px) and (orientation: landscape) {
+            &::before {
+                top: 22px;
+            }
+
+            &--line {
+                &::before {
+                    left: 69px;
+                }
+            }
+
+            &--line2 {
+                &::before {
+                    left: 133px;
+                }
+            }
+
+            &--line3 {
+                &::before {
+                    left: 214px;
+                }
+            }
         }
 
         &:nth-child(1) {
             &::before {
                 display: none;
             }
+
         }
     }
 
     &__social-link {
-        width: 100%;
         display: inline-block;
+        width: 100%;
         padding: 10px 5px;
         color: $accent;
         border-radius: 4px;
@@ -372,7 +478,7 @@
 
         &:focus {
             outline: 1px solid $accent;
-            outline-offset: 4px;
+
         }
 
         &:active {
@@ -381,7 +487,7 @@
 
         @media (min-width: 480px) {
             font-size: 18px;
-            padding: 10px 10px;
+            padding: 10px 5px;
         }
 
         @media (min-width: 320px) and (orientation: landscape) {
