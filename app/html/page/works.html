@@ -3,7 +3,7 @@
 })
 
 @@include('../components/global/header.html', {
-    "activeclassWorks" : "menu__link--active"
+"activeclassWorks" : "menu__link--active"
 })
 <main class="main">
     <section class="works">
@@ -30,8 +30,28 @@
                 <li class="works__item mix category-a">
                     <div class="works__card">
                         <div class="works__top">
-                            <img class="works__img" src="/images/works/works.jpg" alt="Web-site" width="370"
-                                height="294">
+
+
+                            <picture>
+                                <source
+                                    srcset="./images/works/sofaworld/sofaworld1x-desktop.jpg 1x, ./images/works/sofaworld/sofaworld2x-desktop.jpg 2x"
+                                    @media"(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/sofaworld/sofaworld1x-tab.jpg 1x, ./images/works/sofaworld/sofaworld2x-tab.jpg 2x"
+                                    @media"(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/sofaworld/sofaworld1x-mob.jpg 1x, ./images/works/sofaworld/sofaworld2x-mob.jpg 2x"
+                                    @media"(min-width: 320px)">
+                                <img class="works__img" src="./images/works/sofaworld/sofaworld1x-mob.jpg"
+                                    alt="Web-site" width="370" height="294">
+                            </picture>
+
+
+
+
+
+
+
                             <p class="works__hidden-text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod
@@ -54,8 +74,31 @@
                 <li class="works__item mix category-b">
                     <div class="works__card">
                         <div class="works__top">
-                            <img class="works__img" src="/images/works/works-2.jpg" alt="Brand" width="370"
-                                height="294">
+
+
+
+                            <picture>
+                                <source
+                                    srcset="./images/works/mobydickcaffe/caffe1x-desktop.jpg 1x, ./images/works/mobydickcaffe/caffe2x-desktop.jpg 2x"
+                                    @media"(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/mobydickcaffe/caffe1x-tab.jpg 1x, ./images/works/mobydickcaffe/caffe2x-tab.jpg 2x"
+                                    @media"(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/mobydickcaffe/caffe1x-mob.jpg 1x, ./images/works/mobydickcaffe/caffe2x-mob.jpg 2x"
+                                    @media"(min-width: 320px)">
+                                <img class="works__img" src="./images/works/mobydickcaffe/caffe1x-mob.jpg " alt="Brand"
+                                    width="370" height="294">
+                            </picture>
+
+
+
+
+
+
+
+
+
                             <p class="works__hidden-text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod
@@ -78,7 +121,19 @@
                 <li class="works__item mix category-a">
                     <div class="works__card">
                         <div class="works__top">
-                            <img class="works__img" src="/images/works/works-3.jpg" alt="App" width="370" height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/works/teslachargermap/tesla1x-desktop.jpg 1x, ./images/works/teslachargermap/tesla2x-desktop.jpg 2x"
+                                    @media"(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/teslachargermap/tesla1x-tab.jpg 1x, ./images/works/teslachargermap/tesla2x-tab.jpg 2x"
+                                    @media"(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/teslachargermap/tesla1x-mob.jpg 1x, ./images/works/teslachargermap/tesla2x-mob.jpg 2x"
+                                    @media"(min-width: 320px)">
+                                <img class="works__img" src="./images/works/teslachargermap/tesla1x-mob.jpg" alt="App"
+                                    width="370" height="294">
+                            </picture>
                             <p class="works__hidden-text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod
@@ -101,8 +156,19 @@
                 <li class="works__item mix category-c">
                     <div class="works__card">
                         <div class="works__top">
-                            <img class="works__img" src="/images/works/works-4.jpg" alt="Design" width="370"
-                                height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/works/bronzesky/bronzesky1x-desktop.jpg 1x, ./images/works/bronzesky/bronzesky2x-desktop.jpg 2x"
+                                    @media"(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/bronzesky/bronzesky1x-tab.jpg 1x, ./images/works/bronzesky/bronzesky2x-tab.jpg 2x"
+                                    @media"(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/bronzesky/bronzesky1x-mob.jpg  1x, ./images/works/bronzesky/bronzesky2x-mob.jpg 2x"
+                                    @media"(min-width: 320px)">
+                                <img class="works__img" src="./images/works/bronzesky/bronzesky1x-mob.jpg" alt="Design"
+                                    width="370" height="294">
+                            </picture>
                             <p class="works__hidden-text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod
@@ -125,8 +191,19 @@
                 <li class="works__item mix category-c">
                     <div class="works__card">
                         <div class="works__top">
-                            <img class="works__img" src="/images/works/works-5.jpg" alt="Design" width="370"
-                                height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/works/magazine/magazine1x-desktop.jpg 1x, ./images/works/magazine/magazine2x-desktop.jpg 2x"
+                                    @media"(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/magazine/magazine1x-tab.jpg 1x, ./images/works/magazine/magazine2x-tab.jpg 2x"
+                                    @media"(min-width: 768px)">
+                                <source
+                                    srcset="./images/work/magazine/magazine1x-mob.jpg 1x, ./images/works/magazine/magazine2x-mob.jpg 2x"
+                                    @media"(min-width: 320px)">
+                                <img class="works__img" src="./images/work/magazine/magazine1x-mob.jpg" alt="Design"
+                                    width="370" height="294">
+                            </picture>
                             <p class="works__hidden-text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod
@@ -149,7 +226,19 @@
                 <li class="works__item mix category-d">
                     <div class="works__card">
                         <div class="works__top">
-                            <img class="works__img" src="/images/works/works-6.jpg" alt="App" width="370" height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/works/photonium/app1x-desktop.jpg 1x, ./images/works/photonium/app2x-desktop.jpg 2x"
+                                    @media"(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/photonium/app1x-tap.jpg 1x, ./images/works/photonium/app2x-tap.jpg 2x"
+                                    @media"(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/photonium/app1x-mob.jpg 1x, ./images/works/photonium/app2x-mob.jpg 2x"
+                                    @media"(min-width: 320px)">
+                                <img class="works__img" src="./images/works/photonium/app1x-mob.jpg" alt="App"
+                                    width="370" height="294">
+                            </picture>
                             <p class="works__hidden-text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod
@@ -172,8 +261,19 @@
                 <li class="works__item mix category-a">
                     <div class="works__card">
                         <div class="works__top">
-                            <img class="works__img" src="/images/works/works-7.jpg" alt="Brand" width="370"
-                                height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/works/brand/brand1x-desktop.jpg 1x, ./images/works/brand/brand2x-desktop.jpg 2x"
+                                    @media"(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/brand/brand1x-tab.jpg 1x, ./images/works/brand/brand2x-tab.jpg 2x"
+                                    @media"(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/brand/brand1x-mob.jpg 1x, ./images/works/brand/brand2x-mob.jpg 2x"
+                                    @media"(min-width: 320px)">
+                                <img class="works__img" src="./images/works/brand/brand1x-mob.jpg" alt="Brand"
+                                    width="370" height="294">
+                            </picture>
                             <p class="works__hidden-text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod
@@ -196,8 +296,19 @@
                 <li class="works__item mix category-b">
                     <div class="works__card">
                         <div class="works__top">
-                            <img class="works__img" src="/images/works/works-8.jpg" alt="Design" width="370"
-                                height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/works/design/design1x-desktop.jpg 1x, ./images/works/design/design2x-desktop.jpg 2x"
+                                    @media"(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/design/design1x-tab.jpg 1x, ./images/works/design/design2x-tab.jpg 2x"
+                                    @media"(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/design/design1x-mob.jpg 1x,./images/works/design/design2x-mob.jpg 2x"
+                                    @media"(min-width: 320px)">
+                                <img class="works__img" src="./images/works/design/design1x-mob.jpg 1x" alt="Design"
+                                    width="370" height="294">
+                            </picture>
                             <p class="works__hidden-text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod
@@ -220,8 +331,20 @@
                 <li class="works__item mix category-a">
                     <div class="works__card">
                         <div class="works__top">
-                            <img class="works__img" src="/images/works/works-9.jpg" alt="Web-site" width="370"
-                                height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/works/website/website1x-desktop.jpg 1x, ./images/works/website/website2x-desktop.jpg 2x"
+                                    @media"(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/website/website1x-tab.jpg 1x, ./images/works/website/website2x-tab.jpg 2x"
+                                    @media"(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/website/website1x-mob.jpg 1x, ./images/works/website/website2x-mob.jpg 2x"
+                                    @media"(min-width: 320px)">
+
+                                <img class="works__img" src="./images/works/website/website1x-mob.jpg" alt="Web-site"
+                                    width="370" height="294">
+                            </picture>
                             <p class="works__hidden-text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod

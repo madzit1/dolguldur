@@ -3,18 +3,27 @@
         <h2 class="title">Our services</h2>
         <ul class="services__list">
             <li class="services__item">
-                <img class="services__img" src="../images/services/services.jpg" alt="workplace" width="370"
-                    height="295">
+                <picture>
+                    <source srcset=" ./images/services/desktopapps/desktopapps1x-desktop.jpg 1x, ./images/services/desktopapps/desktopapps2x-desktop.jpg 2x" @media"(min-width: 1200px)">
+                    <img class="services__img" src="./images/services/desktopapps/desktopapps1x-desktop.jpg" alt="workplace"
+                        width="370" height="295">
+                </picture>
                 <h3 class="services__title">desktop apps</h3>
             </li>
             <li class="services__item">
-                <img class="services__img" src="../images/services/services-2.jpg" alt="phone in a man's hands"
-                    width="370" height="295">
+                <picture>
+                    <source srcset=" ./images/services/mobileapps/mobileapps1x-desktop.jpg 1x, ./images/services/mobileapps/mobileapps2x-desktop.jpg 2x" @media"(min-width: 1200px)">
+                     <img class="services__img" src="./images/services/mobileapps/mobileapps1x-desktop.jpg" alt="girl draws" width="370"
+                        height="295">
+                </picture> 
                 <h3 class="services__title">mobile apps</h3>
             </li>
             <li class="services__item">
-                <img class="services__img" src="../images/services/services-3.jpg" alt="man draws" width="370"
-                    height="295">
+                 <picture>
+                    <source srcset="./images/services/moderndesign/moderndesign1x.jpg 1x,  ./images/services/moderndesign/moderndesign2x-desktop.jpg 2x" @media"(min-width: 1200px)">
+                    <img class="services__img" src="./images/services/moderndesign/moderndesign1x.jpg" alt="girl draws" width="370"
+                        height="295">
+                </picture> 
                 <h3 class="services__title">modern design</h3>
             </li>
         </ul>
