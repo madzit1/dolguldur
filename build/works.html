@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Works dolguldur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body data-lock>
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <nav class="menu">
+                <a class="logo header__logo" href="index">
+                    <img class="logo__img logo__img--small" src="../images/logo/logo.svg" alt="logo Dolguldur"
+                        width="190" height="36">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link active" href="index">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="works">Our Works</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Contacts</a>
+                    </li>
+                </ul>
+                <button class="burger-btn" type="button" data-menu-button>
+                    <span class="burger-btn__line"></span>
+                    <span class="sr-only">button to open and close mobile menu</span>
+                </button>
+                <div class="mobile-menu" data-menu>
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link active" href="index">Home</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="works">Our Works</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu__box">
+                        <ul class="mobile-menu__contacts">
+                            <li class="mobile-menu__contacts-item">
+                                <a class="mobile-menu__contacts-link mobile-menu__contacts-link--active"
+                                    href="tel:380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="mobile-menu__contacts-item">
+                                <a class="mobile-menu__contacts-link" href="mailto:info@dolguldurcom">
+                                    info@dolguldur.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu__social">
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social-link" href="#">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social-item mobile-menu__social-item--line">
+                                <a class="mobile-menu__social-link" href="#">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social-item  mobile-menu__social-item--line2">
+                                <a class="mobile-menu__social-link" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social-item  mobile-menu__social-item--line3">
+                                <a class="mobile-menu__social-link" href="#">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <ul class="header__contacts">
+                <li class="header__contacts-item">
+                    <a class="header__contacts-link" href="mailto:info@dolguldurcom">
+                        <svg class="header__contacts-icon" width="16" height="12">
+                            <use href="images/icon/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@dolguldur.com
+                    </a>
+                </li>
+                <li class="header__contacts-item">
+                    <a class="header__contacts-link" href="tel:380961111111">
+                        <svg class="header__contacts-icon" width="16" height="12">
+                            <use href="images/icon/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="works">
+        <div class="container">
+            <h1 class="sr-only">Our Works</h1>
+            <ul class="works__filter">
+                <li class="works__filter-item">
+                    <button class="works__button" type="button" data-filter="all">All</button>
+                </li>
+                <li class="works__filter-item">
+                    <button class="works__button" type="button" data-filter=".category-a">Web-sites</button>
+                </li>
+                <li class="works__filter-item">
+                    <button class="works__button" type="button" data-filter=".category-b">Apps</button>
+                </li>
+                <li class="works__filter-item">
+                    <button class="works__button" type="button" data-filter=".category-d">Designes</button>
+                </li>
+                <li class="works__filter-item">
+                    <button class="works__button" type="button" data-filter=".category-c">Brands</button>
+                </li>
+            </ul>
+            <ul class="works__list">
+                <li class="works__item mix category-a">
+                    <div class="works__card">
+                        <div class="works__top">
+                            <picture>
+                                <source
+                                    srcset="./images/works/sofaworld/sofaworld1x-desktop.jpg 1x, ./images/works/sofaworld/sofaworld2x-desktop.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/sofaworld/sofaworld1x-tab.jpg 1x, ./images/works/sofaworld/sofaworld2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/sofaworld/sofaworld1x-mob.jpg 1x, ./images/works/sofaworld/sofaworld2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img class="works__img" src="./images/works/sofaworld/sofaworld1x-mob.jpg"
+                                    alt="Web-site" width="370" height="294">
+                            </picture>
+                            <p class="works__hidden-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim
+                                veniam, quis nostrud exercitation
+                                ullamco consequat.
+                            </p>
+                        </div>
+                        <div class="works__content">
+                            <h2 class="works__title">
+                                Sofa World
+                            </h2>
+                            <span class="works__text">
+                                Web-site
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__item mix category-b">
+                    <div class="works__card">
+                        <div class="works__top">
+                            <picture>
+                                <source
+                                    srcset="./images/works/mobydickcaffe/caffe1x-desktop.jpg 1x, ./images/works/mobydickcaffe/caffe2x-desktop.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/mobydickcaffe/caffe1x-tab.jpg 1x, ./images/works/mobydickcaffe/caffe2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/mobydickcaffe/caffe1x-mob.jpg 1x, ./images/works/mobydickcaffe/caffe2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img class="works__img" src="./images/works/mobydickcaffe/caffe1x-mob.jpg " alt="Brand"
+                                    width="370" height="294">
+                            </picture>
+                            <p class="works__hidden-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim
+                                veniam, quis nostrud exercitation
+                                ullamco consequat.
+                            </p>
+                        </div>
+                        <div class="works__content">
+                            <h2 class="works__title">
+                                Moby Dick Caffe
+                            </h2>
+                            <span class="works__text">
+                                Brand
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__item mix category-a">
+                    <div class="works__card">
+                        <div class="works__top">
+                            <picture>
+                                <source
+                                    srcset="./images/works/teslachargermap/tesla1x-desktop.jpg 1x, ./images/works/teslachargermap/tesla2x-desktop.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/teslachargermap/tesla1x-tab.jpg 1x, ./images/works/teslachargermap/tesla2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/teslachargermap/tesla1x-mob.jpg 1x, ./images/works/teslachargermap/tesla2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img class="works__img" src="./images/works/teslachargermap/tesla1x-mob.jpg" alt="App"
+                                    width="370" height="294">
+                            </picture>
+                            <p class="works__hidden-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim
+                                veniam, quis nostrud exercitation
+                                ullamco consequat.
+                            </p>
+                        </div>
+                        <div class="works__content">
+                            <h2 class="works__title">
+                                Tesla charger-map
+                            </h2>
+                            <span class="works__text">
+                                App
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__item mix category-c">
+                    <div class="works__card">
+                        <div class="works__top">
+                            <picture>
+                                <source
+                                    srcset="./images/works/bronzesky/bronzesky1x-desktop.jpg 1x, ./images/works/bronzesky/bronzesky2x-desktop.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/bronzesky/bronzesky1x-tab.jpg 1x, ./images/works/bronzesky/bronzesky2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/bronzesky/bronzesky1x-mob.jpg  1x, ./images/works/bronzesky/bronzesky2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img class="works__img" src="./images/works/bronzesky/bronzesky1x-mob.jpg" alt="Design"
+                                    width="370" height="294">
+                            </picture>
+                            <p class="works__hidden-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim
+                                veniam, quis nostrud exercitation
+                                ullamco consequat.
+                            </p>
+                        </div>
+                        <div class="works__content">
+                            <h2 class="works__title">
+                                Bronze Sky
+                            </h2>
+                            <span class="works__text">
+                                Design
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__item mix category-c">
+                    <div class="works__card">
+                        <div class="works__top">
+                            <picture>
+                                <source
+                                    srcset="./images/works/magazine/magazine1x-desktop.jpg 1x, ./images/works/magazine/magazine2x-desktop.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/magazine/magazine1x-tab.jpg 1x, ./images/works/magazine/magazine2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/magazine/magazine1x-mob.jpg 1x, ./images/works/magazine/magazine2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img class="works__img" src="./images/work/magazine/magazine1x-mob.jpg" alt="Design"
+                                    width="370" height="294">
+                            </picture>
+                            <p class="works__hidden-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim
+                                veniam, quis nostrud exercitation
+                                ullamco consequat.
+                            </p>
+                        </div>
+                        <div class="works__content">
+                            <h2 class="works__title">
+                                Cereal Travel Magazine
+                            </h2>
+                            <span class="works__text">
+                                Design
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__item mix category-d">
+                    <div class="works__card">
+                        <div class="works__top">
+                            <picture>
+                                <source
+                                    srcset="./images/works/photonium/app1x-desktop.jpg 1x, ./images/works/photonium/app2x-desktop.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/photonium/app1x-tab.jpg 1x, ./images/works/photonium/app2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/photonium/app1x-mob.jpg 1x, ./images/works/photonium/app2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img class="works__img" src="./images/works/photonium/app1x-mob.jpg" alt="App"
+                                    width="370" height="294">
+                            </picture>
+                            <p class="works__hidden-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim
+                                veniam, quis nostrud exercitation
+                                ullamco consequat.
+                            </p>
+                        </div>
+                        <div class="works__content">
+                            <h2 class="works__title">
+                                Photonium
+                            </h2>
+                            <span class="works__text">
+                                App
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__item mix category-a">
+                    <div class="works__card">
+                        <div class="works__top">
+                            <picture>
+                                <source
+                                    srcset="./images/works/brand/brand1x-desktop.jpg 1x, ./images/works/brand/brand2x-desktop.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/brand/brand1x-tab.jpg 1x, ./images/works/brand/brand2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/brand/brand1x-mob.jpg 1x, ./images/works/brand/brand2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img class="works__img" src="./images/works/brand/brand1x-mob.jpg" alt="Brand"
+                                    width="370" height="294">
+                            </picture>
+                            <p class="works__hidden-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim
+                                veniam, quis nostrud exercitation
+                                ullamco consequat.
+                            </p>
+                        </div>
+                        <div class="works__content">
+                            <h2 class="works__title">
+                                Keep Exploring
+                            </h2>
+                            <span class="works__text">
+                                Brand
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__item mix category-b">
+                    <div class="works__card">
+                        <div class="works__top">
+                            <picture>
+                                <source
+                                    srcset="./images/works/design/design1x-desktop.jpg 1x, ./images/works/design/design2x-desktop.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/design/design1x-tab.jpg 1x, ./images/works/design/design2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/design/design1x-mob.jpg 1x,./images/works/design/design2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img class="works__img" src="./images/works/design/design1x-mob.jpg 1x" alt="Design"
+                                    width="370" height="294">
+                            </picture>
+                            <p class="works__hidden-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim
+                                veniam, quis nostrud exercitation
+                                ullamco consequat.
+                            </p>
+                        </div>
+                        <div class="works__content">
+                            <h2 class="works__title">
+                                Architectural conceptual projects
+                            </h2>
+                            <span class="works__text">
+                                Design
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__item mix category-a">
+                    <div class="works__card">
+                        <div class="works__top">
+                            <picture>
+                                <source
+                                    srcset="./images/works/website/website1x-desktop.jpg 1x, ./images/works/website/website2x-desktop.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/works/website/website1x-tab.jpg 1x, ./images/works/website/website2x-tab.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/works/website/website1x-mob.jpg 1x, ./images/works/website/website2x-mob.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img class="works__img" src="./images/works/website/website1x-mob.jpg" alt="Web-site"
+                                    width="370" height="294">
+                            </picture>
+                            <p class="works__hidden-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim
+                                veniam, quis nostrud exercitation
+                                ullamco consequat.
+                            </p>
+                        </div>
+                        <div class="works__content">
+                            <h2 class="works__title">
+                                Le Buzz food service
+                            </h2>
+                            <span class="works__text">
+                                Web-site
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__content">
+                <a class="logo footer__logo" href="#">
+                    <img class="logo__img" src="../images/logo/footer-logo.svg" alt="logo Dolguldur" width="140"
+                        height="25">
+                </a>
+                <span class="footer__text">14 Green St., Belmont, Boston. USA</span>
+                <address class="address">
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <a class="address__link" href="mailto:info@dolguldurcom">info@dolguldur.com</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link" href="tel:380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer__box">
+                <span class="footer__title">join</span>
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link social__link--light" href="#">
+                            <svg class="social__icon" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            <span class="sr-only">instagram</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--light" href="#">
+                            <svg class="social__icon" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-twitter"></use>
+                            </svg>
+                            <span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--light" href="#">
+                            <svg class="social__icon" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            <span class="sr-only">facebook</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--light" href="#">
+                            <svg class="social__icon" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            <span class="sr-only">linkedin</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__form-box">
+                <span class="footer__title">
+                    subscribe
+                </span>
+                <form class="subscribe-form">
+                    <label class="subscribe-form__label" for="emailName">
+                        <span class="sr-only">enter your email</span>
+                        <input class="subscribe-form__input" placeholder="E-mail" type="email" id="emailName"
+                            name="emailName">
+                    </label>
+                    <button class="button button--icon" type="submit">
+                        Subscribe
+                        <svg class="subscribe-form__icon" width="24" height="24">
+                            <use href="images/icon/sprite.svg#icon-sheet"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

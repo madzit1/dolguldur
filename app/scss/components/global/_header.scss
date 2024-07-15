@@ -194,7 +194,7 @@
             opacity: .50;
         }
 
-        &--active {
+        &.active {
             color: $accent;
             transition: color 0.5s;
 
@@ -226,6 +226,10 @@
             &:active {
                 opacity: .70;
             }
+        }
+
+        &--default {
+            color: #212121;
         }
     }
 }
@@ -274,7 +278,7 @@
         border-radius: 4px;
         transition: opacity 0.5s, outline-color 0.5s, color 0.5s;
 
-        &.menu__link--active {
+        &.active {
             color: $accent;
         }
 

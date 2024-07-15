@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web developer services dolguldur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body data-lock>
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <nav class="menu">
+                <a class="logo header__logo" href="index">
+                    <img class="logo__img logo__img--small" src="../images/logo/logo.svg" alt="logo Dolguldur"
+                        width="190" height="36">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link active" href="index">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="works">Our Works</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Contacts</a>
+                    </li>
+                </ul>
+                <button class="burger-btn" type="button" data-menu-button>
+                    <span class="burger-btn__line"></span>
+                    <span class="sr-only">button to open and close mobile menu</span>
+                </button>
+                <div class="mobile-menu" data-menu>
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link active" href="index">Home</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="works">Our Works</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu__box">
+                        <ul class="mobile-menu__contacts">
+                            <li class="mobile-menu__contacts-item">
+                                <a class="mobile-menu__contacts-link mobile-menu__contacts-link--active"
+                                    href="tel:380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="mobile-menu__contacts-item">
+                                <a class="mobile-menu__contacts-link" href="mailto:info@dolguldurcom">
+                                    info@dolguldur.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu__social">
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social-link" href="#">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social-item mobile-menu__social-item--line">
+                                <a class="mobile-menu__social-link" href="#">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social-item  mobile-menu__social-item--line2">
+                                <a class="mobile-menu__social-link" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social-item  mobile-menu__social-item--line3">
+                                <a class="mobile-menu__social-link" href="#">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <ul class="header__contacts">
+                <li class="header__contacts-item">
+                    <a class="header__contacts-link" href="mailto:info@dolguldurcom">
+                        <svg class="header__contacts-icon" width="16" height="12">
+                            <use href="images/icon/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@dolguldur.com
+                    </a>
+                </li>
+                <li class="header__contacts-item">
+                    <a class="header__contacts-link" href="tel:380961111111">
+                        <svg class="header__contacts-icon" width="16" height="12">
+                            <use href="images/icon/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <h1 class="sr-only">web development and their developers</h1>
+    <section class="hero">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <h2 class="hero__title">author's forge where your sites are created</h2>
+            <button class="button" type="button" data-modal-open>Go to order</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <form class="feedback-form">
+                    <h3 class="feedback-form__title">Tell about yourself and we will contact you</h3>
+                    <label class="feedback-form__label" for="names">
+                        Name
+                        <input class="feedback-form__input" type="text" id="names" name="names" required>
+                        <svg class="feedback-form__icon" width="18" height="18">
+                            <use href="images/icon/sprite.svg#icon-uzer"></use>
+                        </svg>
+                    </label>
+                    <label class="feedback-form__label" for="phone">
+                        Phone
+                        <input class="feedback-form__input" type="tel" id="phone" name="phone" required>
+                        <svg class="feedback-form__icon" width="18" height="18">
+                            <use href="images/icon/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </label>
+                    <label class="feedback-form__label" for="email">
+                        E-mail
+                        <input class="feedback-form__input" type="email" id="email" name="email" required>
+                        <svg class="feedback-form__icon" width="18" height="18">
+                            <use href="images/icon/sprite.svg#icon-email"></use>
+                        </svg>
+                    </label>
+                    <label class="feedback-form__label feedback-form__label--area" for="message">
+                        Message
+                        <textarea class="feedback-form__input feedback-form__input--area" name="text" id="message"
+                            placeholder="Your message..." required></textarea>
+                    </label>
+                    <label class="feedback-form__checkbox-label" for="checkbox">
+                        <input class="feedback-form__checkbox-input" type="checkbox" id="checkbox" name="checkbox"
+                            required>
+                        <span class="feedback-form__fake-checkbox">
+                            <svg class="feedback-form__checkbox-icon" width="10" height="8">
+                                <use href="images/icon/sprite.svg#icon-checkbox"></use>
+                            </svg>
+                        </span>
+                        <span class="feedback-form__text">
+                            I agree to the subscription and accept the
+                            <a class="feedback-form__link" href="#">Terms of use</a>
+                        </span>
+                    </label>
+                    <button class="button button--big" type="submit">Submit</button>
+                </form>
+                <button class="close-button" type="button" data-modal-close>
+                    <span class="sr-only">fashion window close button</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="hero__slider">
+        <div class="hero__slider-img hero__slider-img--slider1"></div>
+        <div class="hero__slider-img hero__slider-img--slider2"></div>
+        <div class="hero__slider-img hero__slider-img--slider3"></div>
+    </div>
+</section>
+    <section class="advantages">
+    <div class="container">
+        <h2 class="sr-only">Our advantages</h2>
+        <ul class="advantages__list">
+            <li class="advantages__item">
+                <div class="advantages__thumbnail">
+                    <svg class="advantages__icon" width="70" height="70">
+                        <use href="images/icon/sprite.svg#icon-hands"></use>
+                    </svg>
+                </div>
+                <h3 class="advantages__title">
+                    Effective team
+                </h3>
+                <p class="advantages__text">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod
+                    tempor incididunt.
+                </p>
+            </li>
+            <li class="advantages__item">
+                <div class="advantages__thumbnail">
+                    <svg class="advantages__icon" width="70" height="70">
+                        <use href="images/icon/sprite.svg#icon-telephone"></use>
+                    </svg>
+                </div>
+                <h3 class="advantages__title">
+                    punctuality
+                </h3>
+                <p class="advantages__text">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt.
+                </p>
+            </li>
+            <li class="advantages__item">
+                <div class="advantages__thumbnail">
+                    <svg class="advantages__icon" width="70" height="70">
+                        <use href="images/icon/sprite.svg#icon-Human"></use>
+                    </svg>
+                </div>
+                <h3 class="advantages__title">
+                    planning
+                </h3>
+                <p class="advantages__text">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt.
+                </p>
+            </li>
+            <li class="advantages__item">
+                <div class="advantages__thumbnail">
+                    <svg class="advantages__icon" width="70" height="70">
+                        <use href="images/icon/sprite.svg#icon-computer"></use>
+                    </svg>
+                </div>
+                <h3 class="advantages__title">
+                    innovation
+                </h3>
+                <p class="advantages__text">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+    <section class="services">
+    <div class="container">
+        <h2 class="title">Our services</h2>
+        <ul class="services__list">
+            <li class="services__item">
+                <picture>
+                    <source srcset=" ./images/services/desktopapps/desktopapps1x-desktop.jpg 1x, ./images/services/desktopapps/desktopapps2x-desktop.jpg 2x" media="(min-width: 1200px)">
+                    <img class="services__img" src="./images/services/desktopapps/desktopapps1x-desktop.jpg" alt="workplace"
+                        width="370" height="295">
+                </picture>
+                <h3 class="services__title">desktop apps</h3>
+            </li>
+            <li class="services__item">
+                <picture>
+                    <source srcset=" ./images/services/mobileapps/mobileapps1x-desktop.jpg 1x, ./images/services/mobileapps/mobileapps2x-desktop.jpg 2x"  media="(min-width: 1200px)">
+                     <img class="services__img" src="./images/services/mobileapps/mobileapps1x-desktop.jpg" alt="girl draws" width="370"
+                        height="295">
+                </picture> 
+                <h3 class="services__title">mobile apps</h3>
+            </li>
+            <li class="services__item">
+                 <picture>
+                    <source srcset="./images/services/moderndesign/moderndesign1x.jpg 1x,  ./images/services/moderndesign/moderndesign2x-desktop.jpg 2x"  media="(min-width: 1200px)">
+                    <img class="services__img" src="./images/services/moderndesign/moderndesign1x.jpg" alt="girl draws" width="370"
+                        height="295">
+                </picture> 
+                <h3 class="services__title">modern design</h3>
+            </li>
+        </ul>
+    </div>
+</section>
+    <section class="team">
+    <div class="container">
+        <h2 class="title">Our team</h2>
+        <ul class="team__list">
+            <li class="team__item">
+                <picture>
+                    <source srcset="./images/team/paulcastanie/paulcastanie1x-desktop.jpg 1x, ./images/team/paulcastanie/paulcastanie2x-desktop.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset=" ./images/team/paulcastanie/paulcastanie1x-tab.jpg 1x, ./images/team/paulcastanie/paulcastanie2x-tab.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/team/paulcastanie/paulcastanie1x-mob.jpg 1x, ./images/team/paulcastanie/paulcastanie2x-mob.jpg 2x" media="(min-width: 320px)">
+                    <img class="team__img" src="./images/team/paulcastanie/paulcastanie1x-mob.jpg" alt="Paul Castanie"
+                        width="270" height="260">
+                </picture>
+                <div class="team__box">
+                    <h3 class="team__title">
+                        Paul Castanie
+                    </h3>
+                    <span class="team__text">
+                        Product Designer
+                    </span>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-instagram"></use>
+                                </svg>
+                                <span class="sr-only">instagram</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-twitter"></use>
+                                </svg>
+                                <span class="sr-only">twitter</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-facebook"></use>
+                                </svg>
+                                <span class="sr-only">facebook</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                                <span class="sr-only">linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="team__item">
+                <picture>
+                    <source srcset="./images/team/joannanix/joannanix1x-desktop.jpg 1x, ./images/team/joannanix/joannanix2x-desktop.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/team/joannanix/Joannanix1x-tab.jpg 1x, ./images/team/joannanix/Joannanix2x-tab.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/team/joannanix/Joannanix1x-mob.jpg 1x, ./images/team/joannanix/Joannanix2x-mob.jpg 2x" media="(min-width: 320px)">
+                    <img class="team__img" src="./images/team/joannanix/Joannanix1px-mob.jpg" alt="Joanna Nix"
+                        width="270" height="260">
+                </picture>
+                <div class="team__box">
+                    <h3 class="team__title">
+                        Joanna Nix
+                    </h3>
+                    <span class="team__text">
+                        Frontend Developer
+                    </span>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-instagram"></use>
+                                </svg>
+                                <span class="sr-only">instagram</span>
+                            </a>
+                        </li>
+                        <li class="social social__team">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-twitter"></use>
+                                </svg>
+                                <span class="sr-only">twitter</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-facebook"></use>
+                                </svg>
+                                <span class="sr-only">facebook</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                                <span class="sr-only">linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="team__item">
+                <picture>
+                    <source srcset=" ./images/team/aldodelara/aldodelara1x-desktop.jpg 1x, ./images/team/aldodelara/aldodelara2x-desktop.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset=" ./images/team/aldodelara/aldodelara1x-tab.jpg 1x, ./images/team/aldodelara/aldodelara2x-tab.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/team/aldodelara/aldodelara1x-mob.jpg 1x, ./images/team/aldodelara/aldodelara2x-mob.jpg 2x" media="(min-width: 320px)">
+                    <img class="team__img" src="./images/team/aldodelara/aldodelara1x-mob.jpg 1x" alt="Aldo Delara"
+                        width="270" height="260">
+                </picture>
+                <div class="team__box">
+                    <h3 class="team__title">
+                        Aldo Delara
+                    </h3>
+                    <span class="team__text">
+                        Marketing
+                    </span>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-instagram"></use>
+                                </svg>
+                                <span class="sr-only">instagram</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-twitter"></use>
+                                </svg>
+                                <span class="sr-only">twitter</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-facebook"></use>
+                                </svg>
+                                <span class="sr-only">facebook</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                                <span class="sr-only">linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="team__item">
+                <picture>
+               <source srcset=" ./images/team/oladimejiodunsi/oladimejiodunsi1x-desktop.jpg 1x, ./images/team/oladimejiodunsi/oladimejiodunsi2x-desktop.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset=" ./images/team/oladimejiodunsi/oladimejiodunsi1x-tab.jpg 1x, ./images/team/oladimejiodunsi/oladimejiodunsi2x-tab.jpg 2x" media="(min-width: 768px)">
+                    <source srcset=" ./images/team/oladimejiodunsi/oladimejiodunsi1x-mob.jpg 1x, ./images/team/oladimejiodunsi/oladimejiodunsi2x-mob.jpg 2x" media="(min-width: 320px)">
+                    <img class="team__img" src="./images/team/oladimejiodunsi/oladimejiodunsi1x-mob.jpg" alt="Oladimeji Odunsi" width="270"
+                        height="260">
+                </picture>
+                <div class="team__box">
+                    <h3 class="team__title">
+                        Oladimeji Odunsi
+                    </h3>
+                    <span class="team__text">
+                        UI Designer
+                    </span>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-instagram"></use>
+                                </svg>
+                                <span class="sr-only">instagram</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-twitter"></use>
+                                </svg>
+                                <span class="sr-only">twitter</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-facebook"></use>
+                                </svg>
+                                <span class="sr-only">facebook</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="images/icon/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                                <span class="sr-only">linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+    <section class="partners">
+    <div class="container">
+        <h2 class="title">Our partners</h2>
+        <ul class="partners__list">
+            <li class="partners__item">
+                <a class="partners__link" href="#">
+                    <svg class="partners__icon" width="60" height="60">
+                        <use href="images/icon/sprite.svg#icon-rails"></use>
+                    </svg>
+                    <span class="sr-only">rails</span>
+                </a>
+            </li>
+            <li class="partners__item">
+                <a class="partners__link" href="#">
+                    <svg class="partners__icon" width="60" height="60">
+                        <use href="images/icon/sprite.svg#icon-googlepay"></use>
+                    </svg>
+                    <span class="sr-only">googlepay</span>
+                </a>
+            </li>
+            <li class="partners__item">
+                <a class="partners__link" href="#">
+                    <svg class="partners__icon" width="60" height="60">
+                        <use href="images/icon/sprite.svg#icon-playstation"></use>
+                    </svg>
+                    <span class="sr-only">playstation</span>
+                </a>
+            </li>
+            <li class="partners__item">
+                <a class="partners__link" href="#">
+                    <svg class="partners__icon" width="60" height="60">
+                        <use href="images/icon/sprite.svg#icon-applepay"></use>
+                    </svg>
+                    <span class="sr-only">applepay</span>
+                </a>
+            </li>
+            <li class="partners__item">
+                <a class="partners__link" href="#">
+                    <svg class="partners__icon" width="60" height="60">
+                        <use href="images/icon/sprite.svg#icon-npm"></use>
+                    </svg>
+                    <span class="sr-only">npm</span>
+                </a>
+            </li>
+            <li class="partners__item">
+                <a class="partners__link" href="#">
+                    <svg class="partners__icon" width="60" height="60">
+                        <use href="images/icon/sprite.svg#icon-ubereats"></use>
+                    </svg>
+                    <span class="sr-only">ubereats</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__content">
+                <a class="logo footer__logo" href="#">
+                    <img class="logo__img" src="../images/logo/footer-logo.svg" alt="logo Dolguldur" width="140"
+                        height="25">
+                </a>
+                <span class="footer__text">14 Green St., Belmont, Boston. USA</span>
+                <address class="address">
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <a class="address__link" href="mailto:info@dolguldurcom">info@dolguldur.com</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link" href="tel:380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer__box">
+                <span class="footer__title">join</span>
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link social__link--light" href="#">
+                            <svg class="social__icon" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            <span class="sr-only">instagram</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--light" href="#">
+                            <svg class="social__icon" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-twitter"></use>
+                            </svg>
+                            <span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--light" href="#">
+                            <svg class="social__icon" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            <span class="sr-only">facebook</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--light" href="#">
+                            <svg class="social__icon" width="20" height="20">
+                                <use href="images/icon/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            <span class="sr-only">linkedin</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__form-box">
+                <span class="footer__title">
+                    subscribe
+                </span>
+                <form class="subscribe-form">
+                    <label class="subscribe-form__label" for="emailName">
+                        <span class="sr-only">enter your email</span>
+                        <input class="subscribe-form__input" placeholder="E-mail" type="email" id="emailName"
+                            name="emailName">
+                    </label>
+                    <button class="button button--icon" type="submit">
+                        Subscribe
+                        <svg class="subscribe-form__icon" width="24" height="24">
+                            <use href="images/icon/sprite.svg#icon-sheet"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
